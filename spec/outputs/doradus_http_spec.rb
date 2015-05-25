@@ -3,7 +3,7 @@ require "logstash/outputs/example"
 require "logstash/codecs/plain"
 require "logstash/event"
 
-describe LogStash::Outputs::BatchedHttp do
+describe LogStash::Outputs::DoradusHttp do
   let(:sample_event) { LogStash::Event.new }
   let(:output) { LogStash::Outputs::Example.new }
 

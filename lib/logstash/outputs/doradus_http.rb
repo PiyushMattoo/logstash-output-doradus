@@ -3,7 +3,7 @@ require "logstash/outputs/base"
 require "logstash/namespace"
 require "stud/buffer"
 
-class LogStash::Outputs::BatchedHttp < LogStash::Outputs::Base
+class LogStash::Outputs::DoradusHttp < LogStash::Outputs::Base
   include Stud::Buffer
   # This output lets you `PUT` or `POST` events to a
   # generic HTTP(S) endpoint
@@ -12,7 +12,7 @@ class LogStash::Outputs::BatchedHttp < LogStash::Outputs::Base
   # the headers sent as well as basic customization of the
   # event json itself.
 
-  config_name "batched_http"
+  config_name "doradus_http"
   milestone 1
 
   # URL to use
